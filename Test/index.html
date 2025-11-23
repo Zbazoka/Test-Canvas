@@ -1,0 +1,29 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Canvas Flow — Static (No Node)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>AI Canvas Flow — Static (No Node)</h1>
+    <div class="controls">
+      <input id="apiKey" placeholder="Paste OpenAI API key (sk-...)" />
+      <button id="saveKey">Save key</button>
+      <button id="addNode">+ Add Node</button>
+      <button id="exportJson">Export JSON</button>
+      <span id="status"></span>
+    </div>
+  </header>
+
+  <div id="root" style="height: calc(100vh - 120px);"></div>
+
+  <footer>
+    <small>Important: Your API key is stored only in your browser (localStorage). Keep it private.</small>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

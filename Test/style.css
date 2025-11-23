@@ -1,0 +1,46 @@
+:root{
+  --bg:#0f172a;
+  --card:#0b1220;
+  --accent:#7c3aed;
+  --muted:#94a3b8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;background:linear-gradient(180deg,#071030 0%, #071a2b 100%);color:#e6eef8}
+header{padding:18px 20px;display:flex;align-items:center;gap:16px}
+h1{margin:0;font-size:18px;font-weight:600;color:white}
+.controls{display:flex;align-items:center;gap:8px;margin-left:auto}
+.controls input{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);width:360px;background:rgba(255,255,255,0.02);color:#fff}
+.controls button{padding:8px 10px;border-radius:8px;border:none;background:var(--accent);color:white;cursor:pointer}
+#status{color:var(--muted);margin-left:8px;font-size:13px}
+
+footer{padding:10px 20px;color:var(--muted);font-size:13px}
+
+/* node styles */
+.rf-node.custom-node {
+  width: 320px;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #e6eef8;
+  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+  font-size: 14px;
+}
+
+.node-title{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.node-title .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 10px rgba(124,58,237,0.4)}
+.node-title h3{margin:0;font-size:14px}
+
+.node textarea{width:100%;height:70px;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:rgba(255,255,255,0.02);color:#e6eef8}
+
+.node .btn-row{display:flex;gap:8px;margin-top:8px}
+.node button {flex:1;padding:8px;border-radius:8px;border:none;background:#0ea5a9;color:#031019;cursor:pointer;font-weight:600}
+
+.options {margin-top:8px;display:flex;flex-direction:column;gap:6px;max-height:120px;overflow:auto}
+.option-btn{background:transparent;border:1px solid rgba(255,255,255,0.04);padding:8px;border-radius:8px;color:#cfe9ff;text-align:left;cursor:pointer}
+.option-btn.selected{border-color:var(--accent);box-shadow:0 6px 18px rgba(124,58,237,0.12);background:linear-gradient(90deg, rgba(124,58,237,0.06), rgba(124,58,237,0.02))}
+
+.result{margin-top:8px;padding:8px;border-radius:8px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.02);color:#dbeafe;max-height:180px;overflow:auto}
+
+/* small helpers */
+.small{font-size:12px;color:var(--muted);margin-top:6px}
